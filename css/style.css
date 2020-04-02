@@ -1,0 +1,121 @@
+body{
+    min-height: 100vh;
+    background-color: gray;
+    display: flex;
+}
+
+.formContainer{
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.formContainer > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: dimgray;
+}
+
+.picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -101px;
+}
+
+.picture > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#email, #password{
+    box-sizing: border-box;
+    height: 35px;
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding-left: 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#email:focus, #password:focus{
+    border: 2px solid dodgerblue;
+}
+
+#button{
+    height: 35px;
+    width: 100%;
+    margin-top: 15px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#button:hover{
+    background-color: #009f00;
+}
+
+#button:active{
+    background-color: green;
+}
+
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+    border-top: 1px solid darkgray;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+a:active{
+    color: orange;
+}
+
+.resetBut{
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    margin-top: 5px;
+    margin-right: 5px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.resetBut:active{
+    border-radius: 50%;
+    background-color: red;
+}
